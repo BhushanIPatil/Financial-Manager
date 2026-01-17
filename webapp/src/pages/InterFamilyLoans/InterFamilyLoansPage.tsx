@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { HandCoins, Plus, Edit2, Trash2, DollarSign, Calendar, AlertCircle } from 'lucide-react';
+import { Coins, Plus, Edit2, Trash2, DollarSign, Calendar, AlertCircle } from 'lucide-react';
 import { PageHeader } from '@/components/common/PageHeader';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -130,7 +130,6 @@ export function InterFamilyLoansPage() {
       <PageHeader
         title="Inter-Family Loans"
         description="Track loans between family members"
-        icon={<HandCoins className="w-8 h-8" />}
         action={
           <Dialog open={isAddDialogOpen} onOpenChange={setIsAddDialogOpen}>
             <DialogTrigger asChild>
@@ -330,7 +329,7 @@ export function InterFamilyLoansPage() {
       {familyMembers.length === 0 ? (
         <Card>
           <CardContent className="flex flex-col items-center justify-center py-12">
-            <HandCoins className="w-16 h-16 text-muted-foreground mb-4" />
+            <Coins className="w-16 h-16 text-muted-foreground mb-4" />
             <h3 className="text-lg font-semibold mb-2">Add Family Members First</h3>
             <p className="text-muted-foreground text-center mb-4">
               You need to add family members before tracking loans
@@ -340,7 +339,7 @@ export function InterFamilyLoansPage() {
       ) : interFamilyLoans.length === 0 ? (
         <Card>
           <CardContent className="flex flex-col items-center justify-center py-12">
-            <HandCoins className="w-16 h-16 text-muted-foreground mb-4" />
+            <Coins className="w-16 h-16 text-muted-foreground mb-4" />
             <h3 className="text-lg font-semibold mb-2">No Loans Yet</h3>
             <p className="text-muted-foreground text-center mb-4">
               Start tracking loans between family members
