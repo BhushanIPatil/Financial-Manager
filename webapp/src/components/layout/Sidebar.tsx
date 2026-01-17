@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import {
   LayoutDashboard,
   Users,
-  HandCoins,
+  Coins,
   TrendingUp,
   TrendingDown,
   Wallet,
@@ -16,7 +16,7 @@ import { ROUTES } from '@/constants';
 const navigation = [
   { name: 'Dashboard', href: ROUTES.dashboard, icon: LayoutDashboard },
   { name: 'Family Members', href: ROUTES.familyMembers, icon: Users },
-  { name: 'Family Loans', href: ROUTES.interFamilyLoans, icon: HandCoins },
+  { name: 'Family Loans', href: ROUTES.interFamilyLoans, icon: Coins },
   { name: 'Income', href: ROUTES.income, icon: TrendingUp },
   { name: 'Expenses', href: ROUTES.expenses, icon: TrendingDown },
   { name: 'Investments', href: ROUTES.investments, icon: Wallet },
